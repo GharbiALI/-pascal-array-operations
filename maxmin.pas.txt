@@ -15,8 +15,14 @@ begin
   
   for i := 2 to 5 do
   begin
-    if arr[i] > max then max := arr[i];
-    if arr[i] < min then min := arr[i];
+    if arr[i] > max then 
+    begin
+      max := arr[i];
+    end;  
+    if arr[i] < min then
+    begin
+     min := arr[i];
+    end; 
   end;
 
   writeln('Maximum: ', max);
