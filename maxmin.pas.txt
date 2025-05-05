@@ -1,0 +1,24 @@
+program MaxMinArray;
+var
+  arr: array[1..5] of integer;
+  i, max, min: integer;
+begin
+  writeln('Enter 5 numbers:');
+  for i := 1 to 5 do
+  begin
+    write('Number ', i, ': ');
+    readln(arr[i]);
+  end;
+
+  max := arr[1];
+  min := arr[1];
+  
+  for i := 2 to 5 do
+  begin
+    if arr[i] > max then max := arr[i];
+    if arr[i] < min then min := arr[i];
+  end;
+
+  writeln('Maximum: ', max);
+  writeln('Minimum: ', min);
+end.
