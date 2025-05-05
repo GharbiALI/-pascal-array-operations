@@ -1,0 +1,23 @@
+program ReverseArray;
+var
+  arr, reversed: array[1..5] of integer;
+  i, j: integer;
+begin
+  writeln('Enter 5 numbers:');
+  for i := 1 to 5 do
+  begin
+    write('Number ', i, ': ');
+    readln(arr[i]);
+  end;
+
+  j := 5;
+  for i := 1 to 5 do
+  begin
+    reversed[j] := arr[i];
+    j := j - 1;
+  end;
+
+  writeln('Reversed array:');
+  for i := 1 to 5 do
+    write(reversed[i], ' ');
+end.
